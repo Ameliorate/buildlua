@@ -1,0 +1,6 @@
+[package]
+name = "buildlua"
+version = "0.1.0"
+authors = ["Amelorate <ameilorate2@gmail.com>"]
+
+[dependencies]

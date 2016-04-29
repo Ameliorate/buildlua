@@ -3,4 +3,8 @@ name = "buildlua"
 version = "0.1.0"
 authors = ["Amelorate <ameilorate2@gmail.com>"]
 
+[[bin]]
+name = "buildengine5bin"
+path = "src/bin.rs"
+
 [dependencies]

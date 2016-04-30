@@ -5,9 +5,9 @@
 //! The page can be found at http://www.lua.org/manual/5.2/manual.html#9.
 
 /// The largest unit of code in lua. Equates to an entire file of code.
-pub struct Chunk(Block);
+pub struct Chunk(pub Block);
 
-pub struct Block(Option<Vec<Statement>>, Option<Box<ReturnStatement>>);
+pub struct Block(pub Option<Vec<Statement>>, pub Option<Box<ReturnStatement>>);
 
 pub enum Statement {
     Semicolon,
@@ -31,8 +31,8 @@ pub enum Statement {
     LocalVariableBinding(NameList, Option<ExpressionList>),
 }
 
-pub struct ReturnStatement(Box<ExpressionList>);
-pub struct Label(String);
+pub struct ReturnStatement(pub Box<ExpressionList>);
+pub struct Label(pub String);
 
 pub struct FunctionName {
     pub first_dot_access: String,
